@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- header section -->
+  <div class="header" id="header">
+    <div class="container">
+      <nav>
+        <img src="assets/logo.png" alt="logo" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <i class="fa-sharp fa-solid fa-circle-xmark icon" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars icon" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h1>Hi, I'm <span>Nisha</span></h1>
+        <p>Student</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- about section -->
+  <div class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="left-part">
+          <img src="assets/me-modified.png" alt="my picture">
+        </div>
+        <div class="right-part">
+          <h1 class="aboutme">About Me</h1>
+          <p>Hello! I am Nisha M S. I'm a final year Computer Science student at JSSSTU, Mysore. Feel free to explore my portfolio to get a glimpse of my work. If you have any questions, don't hesitate to reach out. You can find my contact details in the 'Contact Me' section. I look forward to connecting with you!</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <!-- skills -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Algorithms and Data Structures</span></li>
+              <li><span>Object Oriented Programming</span></li>
+              <li><span>Programming Languages - Python, C, Java</span></li>
+              <li><span>Frontend - HTML, CSS, Javascript</span></li>
+              <li><span>Backend - PHP</span></li>
+              <li><span>MySQL and Database Management</span></li>
+            </ul>  
+          </div>
+
+          <!-- Experience -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Summer Internship at AGS, Bangalore</span><br>Worked as an Intelligent Automation Intern at Alcon Global Services, Bangalore. Automated the process of Code Movement and Bot Deployment using Python</li>
+            </ul>  
+          </div>
+
+          <!-- Education -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Sri Jayachamarajendra College of Engineering (JSSSTU), Mysore</span><br>B.E in Computer Science and Engineering (2021-2024). CGPA - 9.35</li>
+              <li><span>Vivekananda Pre-University College, Puttur D.K</span><br>PCME, 98% (Class 12) - 2020</li>
+              <li><span>St. Victor's Girls' Highschool, Puttur D.K</span><br>SSLC, 94.73% - 2018</li>
+            </ul>  
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- projects -->
+  <div class="projects" id="projects">
+    <div class="container">
+      <h1 class="aboutme">My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="assets/melisma.png" alt="">
+          <div class="layer">
+            <h2>Music Website</h2>
+            <br>
+            <p>A music website with admin area using PHP and MySQL</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/music genre.png" alt="">
+          <div class="layer">
+            <h2>Music Genre Classification System</h2>
+            <br>
+            <p>A Music Genre Classifier using KNN approach</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/heart.png" alt="">
+          <div class="layer">
+            <h2>Multiple Disease Prediction System</h2>
+            <br>
+            <p>Prediction of Diabetes,Heart Disease and Parkinsons using various Machine Learning models</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- contact section -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="aboutme">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>nisharainyx@gmail.com</p>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/nisha-m-s-a44400258"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Nisharai02"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="https://drive.google.com/file/d/15cppRInhG0doZntouRs2j2SfaCz_z8Of/view?usp=drivesdk" class="btn anbtn"><i class="fa-solid fa-eye"></i>View CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
+            <button type="submit" class="btn anbtn"">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; Made with <i class="fa-solid fa-heart"></i> by Nisha</p>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+      for(tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemen.style.right = "0";
+    }
+
+    function closemenu(){
+      sidemen.style.right = "-200px";
+    }
+
+  </script>
+  <script src="https://kit.fontawesome.com/6bc9c387f3.js" crossorigin="anonymous"></script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwbOegqP42sC93hYgnvPsDXHnqs4BeYcLs3Daq7mVH_23WHzWjaByramEupp1reW7wnGQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message has been sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = "";
+          }, 5000)
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
